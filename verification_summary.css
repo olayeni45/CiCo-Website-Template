@@ -1,0 +1,433 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --containerFluidHeight:1000px;
+    --dashboardFontSize:14px;
+}
+
+.container-fluid{
+    width:100vw;
+    height:var(--containerFluidHeight);
+    overflow:hidden;
+}
+
+/*Agent Dashboard */
+.dashboard{
+    background-color: #2A58AE;
+    height:var(--containerFluidHeight);
+}
+
+/*Moses Fayemi Picture*/
+.picture{
+    width:100%;
+    height:130px;
+    border-radius: 65px;
+    background-image: url('images/Moses\ Fayemi.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top:20px;
+}
+
+.moses{
+    color:white;
+    font-size:var(--dashboardFontSize);
+    position: relative;
+    top:-15px;
+}
+
+.editProfile{
+     background-color:#FFFFFF1A;
+    border-radius:15px;
+    position: relative;
+    top:55px;
+   border:1px solid #CBDAF6;
+}
+
+.btnText{
+    padding:0;
+    margin:0;
+    color:#FFFFFF;
+}
+
+/*Dashboard Icon */
+.dashIcon{
+    background: url('images/speedometer.svg');
+    width:50px;
+    height:30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  position: relative; 
+  top:55px;
+}
+
+.dashText{
+    color:white;
+    font-size:var(--dashboardFontSize);
+    position: relative;
+    top:60px;
+}
+
+/*User Management Icon */
+.userIcon{
+    background: url('images/user.svg');
+    width:25px;
+    height:36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top:80px;    
+}
+
+.userText{
+    color:white;
+   position: relative;
+   top:80px;
+    font-size:var(--dashboardFontSize);
+}
+
+/*Terminal Icon */
+.terminalIcon{
+    background: url('images/payment-terminal.svg');
+    width:22px;
+    height:32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top:120px;
+}
+
+ .terminalText{
+    color:white;
+     position: relative;
+    top:120px;
+font-size:var(--dashboardFontSize);
+}
+
+/*Transaction Icon */
+.transactionIcon{
+    background: url('images/data.svg');
+    width:36px;
+    height:36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+   top:170px;
+}
+
+ .transactionText{
+    color:white;
+     position: relative;
+    top:175px;
+ font-size:var(--dashboardFontSize);
+}
+
+/*Wallet Icon */
+.walletIcon{
+    background: url('images/digital-wallet.svg');
+    width:40px;
+    height:40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top:230px;
+}
+
+ .walletText{
+    color:white;
+     position: relative;
+   top:225px;
+font-size:var(--dashboardFontSize);
+}
+
+/*Various Divs under the dashboard */
+.pictureFlex, .dashboardFlex, .userFlex, .terminalFlex, .transactionFLex, .walletFlex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.text-align{
+    text-align: center;
+}
+
+/*Remaining Div */
+.remainingDiv{
+    background-color: #F2F4F5;
+    height:var(--containerFluidHeight);
+}
+
+/*Cico Header with Logo*/
+.cicoHeader{
+    background: #FFFFFF ;
+    height:75px;
+    box-shadow: 0px 3px 6px #00000029;
+    position: relative;
+    z-index:3; 
+}
+
+#cicoLogo{
+    height:30px;
+    position: relative;
+    top:15px;
+   
+}
+
+/*Nav Bar after Cico Logo*/
+.addUserHeader{
+     background: #FFFFFF ;
+     height:60px;
+     box-shadow: 0px 3px 6px #00000029;
+     border-top:1px solid #00000029;
+     position: relative;
+     z-index: 1;
+     top:-10px;
+}
+
+.headerFlex{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top:20px;
+}
+
+.verification{
+    color:#707070;
+    position: relative;
+    float: left;
+    font-size:20px;
+}
+
+.walletValue, .transactionValue{
+    color:#013660;
+    font-size: 16px;
+}
+
+/*MEDIA QUERIES FOR DASHBOARD AND NAV BARS*/
+/*xs devices 0-575px */
+@media screen and (min-width:0px) and (max-width:575px)
+{
+.col-dashboard-width{
+     flex: 0 0 90px; 
+    }
+
+    .smallScreen{
+        position: relative;
+        top:-40px;
+    }
+
+.moses{
+    position: relative;
+    top:0px;
+}
+
+.picture{
+    position: relative;
+    top:30px;
+}
+
+.btnText{
+    font-size:13px;
+}
+
+  .walletValue, .transactionValue{
+       font-size:12px;
+   }
+
+   .verification{
+       font-size:15px;
+   }
+}
+
+/*sm devices 576px - 767px */
+@media screen and (min-width:576px) and (max-width:767px)
+{
+.col-dashboard-width{
+     flex: 0 0 110px; 
+    }
+
+   .smallScreen{
+       position: relative;
+       top:-20px;
+   }
+
+   .editProfile {
+       font-size: 14px;
+       position: relative;
+       left:3px;
+   }
+
+    .walletValue, .transactionValue{
+       font-size:14px;
+   }
+
+   .verification{
+       font-size:18px;
+   }
+
+}
+
+/*md devices 768px - 991px */
+@media screen and (min-width:768px) and (max-width:991px)
+{
+.col-dashboard-width{
+     flex: 0 0 125px; 
+    }
+}
+
+/*lg devices 992px - 1199px */
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+.col-dashboard-width{
+     flex: 0 0 150px; 
+    }
+    .picture{
+        position: relative;
+        left:10px;
+    }
+
+    .userText{
+    position: relative;
+        left:5px;
+    }
+}
+
+/*xl devices 1200px above */
+@media screen and (min-width:1200px) 
+{
+.col-dashboard-width{
+     flex: 0 0 180px; 
+    }
+
+.picture{
+position: relative;
+left:23px;
+}
+
+:root{
+--dashboardFontSize:15px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Add Form */
+.wrap{
+    background-color: #FFFFFF;
+    height:350px;
+    margin:auto;
+    position: relative;
+    top:60px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.wrap > p{
+    color:#5a5a5a; 
+    font-weight: bold;
+    position: relative;
+    top:20px;
+    font-size:17px;
+    display: flex;
+    justify-content: center;
+}
+
+.textmute{
+    color:rgb(156, 156, 156);
+}
+
+
+.color{
+   color:#5a5a5a; 
+   position: relative;
+   top:35px;
+ margin:auto;
+}
+
+.totalBorder{
+   border-top:1px solid #707070; 
+   border-bottom:1px solid #707070; 
+}
+
+.spaceAround{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexAll{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center{
+display: flex;
+justify-content: center;
+position: relative;
+top:65px;
+}
+
+.formSubmit{
+    background: linear-gradient(90deg, #11998E, #38EF7D );
+border-radius: 10px;
+color:white;
+}
+
+
+/*MEDIA QUERIES FOR ADD USERS' FORM*/
+/*xs devices 0-379px */
+@media screen and (min-width:0px) and (max-width:399px)
+{
+    .wrap{
+        width:220px;
+       
+    }
+
+
+}
+/*xs devices 380-575px */
+@media screen and (min-width:400px) and (max-width:575px)
+{
+    .wrap{
+        width:290px;
+       
+    }
+
+    
+
+}

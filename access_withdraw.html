@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Access Bank</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/esm/popper.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="fontawesome-free-5.12.1-web/js/all.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"> </script>
+
+    <script type="text/javascript" src="jquery-ui\jquery-ui.min.js"> </script>
+
+    <link rel="stylesheet" href="jquery-ui\jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="access_withdraw.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="dashboard col-dashboard-width">
+
+                <!--Moses Fayemi Picture + Button-->
+                <div class="picture "></div>
+
+                <div class="smallScreen">
+
+                    <div class="pictureFlex ">
+
+                        <button type="button" class="btn editProfile">
+                            <p class="btnText">Edit Profile</p>
+                        </button>
+
+                    </div>
+
+                    <p class="moses text-align">Moses Fayemi</p>
+
+                    <!--Dasbboard Icon-->
+                    <div class="dashboardFlex">
+
+                        <div class="dashIcon"></div>
+
+                    </div>
+
+                    <p class="dashText text-align">Dashboard</p>
+
+                    <!--User Management Icon-->
+                    <div class="userFlex">
+
+                        <div class="userIcon">
+
+                        </div>
+
+                    </div>
+
+                    <p class="userText text-align">Users Management</p>
+
+                    <!--My Terminals Icon-->
+                    <div class="terminalFlex">
+
+                        <div class="terminalIcon"></div>
+
+                    </div>
+
+                    <p class="terminalText text-align">My Terminals</p>
+
+                    <!--Transaction Icon-->
+                    <div class="transactionFLex">
+
+                        <div class="transactionIcon"></div>
+
+                    </div>
+
+                    <p class="transactionText text-align">Transactions</p>
+
+                    <!--Wallet Icon-->
+                    <div class="walletFlex">
+
+                        <div class="walletIcon"></div>
+
+                    </div>
+
+                    <p class="walletText text-align">My Wallet</p>
+
+                </div>
+
+            </div>
+
+            <!--Remaining Div-->
+            <div class="remainingDiv col">
+
+                <div class="row">
+
+                    <div class="cicoHeader col-12">
+
+                        <img src="images/cico-logo.svg" id="cicoLogo" />
+
+                    </div>
+
+                    <div class="addUserHeader col-12">
+
+                        <div class="headerFlex">
+
+                            <h5 class="withdraw">Withdraw Money</h5>
+
+                            <p class="walletValue"> Wallet Balance: ₦154,000 </p>
+
+                            <p class="transactionValue"> Transaction Value: ₦255,000 </p>
+
+                        </div>
+
+                    </div>
+
+                    <!--Add User Form-->
+                    <div class="wrap col-xl-6 col-lg-6 col-md-7 col-sm-8 ">
+
+                        <div class="accessBank">
+                            <img src="images/access-removebg-preview.png" />
+                        </div>
+                        <form class="form ">
+                            <ul>
+
+                                <div class="flexAll">
+
+
+
+                                    <li>
+                                        <label for="access " id="first">Access Bank</label>
+                                        <input type="text" name="access">
+
+                                    </li>
+
+                                    <li>
+                                        <label for="accountNumber" id="second">Beneficiary Account Number</label>
+                                        <input type="number" name="accountNumber">
+                                    </li>
+
+                                    <li>
+                                        <label for="accountName" id="third">Beneficiary Account Name</label>
+                                        <input type="text" name="accountName">
+                                    </li>
+
+                                    <li>
+                                        <label for="amount " id="fourth">Amount</label>
+                                        <input type="number" name="amount" min="0" step="50">
+                                    </li>
+
+
+                                    <li>
+                                        <label for="customer" id="fifth">Customer Number</label>
+                                        <input type="number" name="customer">
+                                    </li>
+
+                                    <li>
+                                        <label for="narration" id="sixth">Narration</label>
+                                        <input type="text" name="narration">
+                                    </li>
+
+
+
+
+                                </div>
+                                <div class=" center">
+
+                                    <button type="button"
+                                        class="btn formSubmit col-xl-8 col-lg-9  col-md-9  ">Submit</button>
+
+                                </div>
+
+                            </ul>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

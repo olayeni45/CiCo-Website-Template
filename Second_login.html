@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiCo Login Page2</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/esm/popper.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="fontawesome-free-5.12.1-web/js/all.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"> </script>
+
+    <script type="text/javascript" src="jquery-ui\jquery-ui.min.js"> </script>
+
+    <link rel="stylesheet" href="jquery-ui\jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="Second_login.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!--GREEN LOGIN DIV-->
+            <div class="login col-4">
+
+                <div class="container ">
+
+                    <div class="helloImage">
+
+                    </div>
+
+                    <div class="login-flex">
+                        <div class="whiteLogin">
+                            <p>Login</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--AUTHORIZATION DIV-->
+            <div class="authorization col-8">
+
+                <div class="flex-container">
+                    <img src="images/cico-logo.svg" id="cicoLogo" />
+                </div>
+
+                <!--FORMS-->
+                <div class="loginForms col-sm-10 col-md-7 col-lg-6">
+
+                    <div class="input-group firstInput">
+                        <div class="input-group-prepend">
+                            <span>
+                                <img src="images/user.svg" id="userIcon"></span>
+                        </div>
+                        <input type="number"
+                            onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"
+                            class="form-control phoneInput" placeholder="Phone Number" />
+
+                    </div>
+
+
+                    <div class="input-group secondInput">
+                        <div class="input-group-prepend">
+                            <span>
+                                <img src="images/lock.svg" id="lockIcon"></span>
+                        </div>
+                        <input type="password" class="form-control passwordInput" placeholder="Password">
+                        <div class="input-group-append">
+                            <span>
+                                <img src="images/view.svg" id="viewIcon" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--LOGIN BUTTON-->
+                <div class="flex-container">
+                    <button type="button" class="btn  col-sm-10  col-md-7 col-lg-6">
+                        <h5 id="btnText">Login</h5>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
